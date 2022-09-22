@@ -24,44 +24,58 @@
         bottom: 0;
         width: 100%;
       }
-      img {
-  height: 80px;
-  width: 80px;
-  margin-right: 200px;
-float:left;
-}
-
 
       .legend {
 background-color: rgb(191, 223, 249);
 border-radius: 3px;
 bottom: 30px;
 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-font: 10px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 padding: 10px;
 position: absolute;
 left: 10px;
 z-index: 1;
 text-decoration: underline;
 }
+
+img {
+  height: 80px;
+  width: 80px;
+position:relative;
+bottom: 2px;
+left: 10px;
+}
  
 .legend h4 {
 margin: 0 0 20px;
-display: inline-block;
-position: relative;
-left: 35px;
 }
 
-.legend h6 {
-margin: 0 0 20px;
-display: inline-block;
-position: relative;
-right: 35px;
-}
 
 .legend h5{ 
-  font: 20px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  text-align: center;
+  font: 10px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+position: absolute;
+top: 10px;
+left: 38px;
+text-decoration: underline;
+}
+
+.legend h6{ 
+  font: 10px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+position: absolute;
+top: 3px;
+right: 38px;
+text-decoration: underline;
+}
+
+.box {
+  display:inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  background: #f7ab08;
+position: absolute;
+top: 47px;
+right: 18px;
 }
  
 .legend div span {
@@ -72,57 +86,9 @@ margin-right: 5px;
 width: 10px;
 }
 
-.box {
-  display:inline-block;
-  width: 80px;
-  height: 80px;
-  border: 1px solid rgba(0, 0, 0, .2);
-  background: #f7ab08;
-position: absolute;
-top: 20px;
-right: 30px;
-}
 
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
-}
 
-/* Style the header links */
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-/* Float the link section to the right */
-.header-right {
-  float: right;
-}
 
     </style>
   </head>
@@ -132,7 +98,9 @@ right: 30px;
       <h1 class="h1">Biking to the Mailbox</h1>
     </div>
     <div id="legend" class="legend">
-      <h4>Where to Go</h4><h5>&</h5><h6>How to Get There</h6>
+      <h4>Where to Go & How to Get There</h4>
+      <h5>Mailboxes</h5>
+      <h6>Bike Routes</h6>
       <div class="box"></div>
       <img src="images/mail-box.svg" alt="My Happy SVG" />
     </div>

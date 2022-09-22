@@ -16,10 +16,7 @@ fs.readFile('../data/boston-mailboxes.csv', 'utf-8', (err, csvString) => {
     }, (err, geojson) => {
     
         if(err) throw err;
-
-        console.log(geojson); // this is our geojson!
         
-        // write file
         fs.writeFile('../data/boston-mailboxes.json', JSON.stringify(geojson), 'utf-8', (err) => {
             
             if(err) throw err;
