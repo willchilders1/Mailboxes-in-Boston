@@ -1,2 +1,4 @@
 # Mailboxes-in-Boston
-This map provides visual information regarding the location of blue USPS mailboxes within Boston
+This map provides visual information regarding the location of blue USPS mailboxes within Boston and the most efficient ways of getting there by bike.
+This map was created using Mapbox Studio and VsCodeEditor, using data from the Massachusetts and US Federal Census Data. With the mid-term election fast approaching, it is helpful to have a succinct map detailing the alternate transportation available. Boston is a physically close city and biking is often as fast as driving through the narrow streets.
+I processed the cvg and shapefile data into geojson data using node, mapshaper, and csv2geojson which were subsequently uploaded to Mapshaper Studio for further visual processing. Some data processing was hampered by the inability to get ogr2ogr working on my computer, though this was solved by working the data through the QGIS platform. The legend has caused me some difficulty, and may still be in progress
