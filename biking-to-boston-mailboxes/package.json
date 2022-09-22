@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "csv2geojson": "^5.1.2",
+    "mapshaper": "^0.6.7",
+    "ogr2ogr": "^3.1.1"
+  }
+}
