@@ -27,9 +27,12 @@
 
       h1{
 font: 50px/20px 'Helvetica Neue', Arial, Helvetica, serif;
-z-index: 1;
-text-decoration: underline;
-text-align: center;
+z-index: 1000;
+position: absolute;
+right: 25px;
+background-color: antiquewhite;
+background-size:contain;
+padding: 18px;
       }
 
       .legend {
@@ -98,17 +101,11 @@ margin-right: 5px;
 width: 10px;
 }
 
-
-
-
-
     </style>
   </head>
   <body>
     <div id="map"></div>
-    <div class="col mx-2">
       <h1 class="h1">Biking to the Mailbox</h1>
-    </div>
     <div id="legend" class="legend">
       <h4>Where to Go & How to Get There</h4>
       <h5>Mailboxes</h5>
